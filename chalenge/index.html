@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style-parte01.css">
+  <link rel="stylesheet" href="style-parte02.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-div"><img src="./assets/img/Pizza Porto.svg" class="nav-brand" alt="pizza porto brand name" /></div>
+    <div class="nav-div">
+      <div>
+        <a href="#">Home</a>
+        <a href="#">Order</a>
+        <a href="#">About us</a>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <div class="presentation">
+      <h2>Best pizza in palermo</h2>
+      <h4>Order now direct from our website</h4>
+    </div>
+  </section>
+  <section class="blue-blocks">
+    <div class="blue-block" id="blue-block01">
+      <div class="blur">
+        <h4>Mozarella</h4>
+      </div><button class="order-now-button">Order now</button>
+    </div>
+    <div class="blue-block" id="blue-block02">
+      <div class="blur">
+        <h4>Pickle</h4>
+      </div><button class="order-now-button">Order now</button>
+    </div>
+    <div class="blue-block" id="blue-block03">
+      <div class="blur">
+        <h4>Peperoni</h4>
+      </div><button class="order-now-button">Order now</button>
+    </div>
+  </section>
+  <section class="grey-blocks">
+    <div class="grey-block">
+      <h4>"Best pizza on Buenos Aires"</h4>
+      <p>- New York Times</p>
+    </div>
+    <div class="grey-block">
+      <h4>"I've never had a peperoni pizza like this"</h4>
+      <p>- Christophe Krywonis</p>
+    </div>
+    <div class="grey-block">
+      <h4>"Whenever i'm in Buenos Aires, i have some pizza porto, there's no doubt it's the best in town"</h4>
+      <p>- Jorge Drexler</p>
+    </div>
+    <div class="grey-block">
+      <h4>"I love Pizza Porto"</h4>
+      <p>- Alex Caniggia</p>
+    </div>
+  </section>
+  <section class="parte02">
+    <h1>Part 02, challenge Javascript</h1>
+    <div class="multiplicacion">
+      <label for="number01">Number 1</label>
+      <input type="number" name="number01" id="number01" />
+      <label for="number02">Number 2</label>
+      <input type="number" name="number02" id="number02" />
+      <button onclick="multiply()">Multilpy</button>
+      <div class="result"></div>
+    </div>
+    <hr>
+    
+    <div class="feriados-container">
+      <h2>No working days</h2>
+      <div class="no-working-container">
+        <h4>Select a year:</h4>
+        <select id="options" onchange="getNoWorkingDays()">
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+        </select>
+      </div>
+      <div class="feriados-result">
+        <p id="trasladables">Feriados trasladables: </p>
+        <p id="nolaborables">Feriados no laborales: </p>
+        <p id="inamovibles">Feriados inamovibles: </p>
+        <div class="inamovibles-detail"></div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

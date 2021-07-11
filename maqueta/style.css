@@ -1,0 +1,96 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NavBar */
+.navbar{
+  margin: 0.5rem;
+  min-height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-div {
+  margin-bottom: 0.5rem;
+  background-color: rgb(255,163,53);
+  height: 5rem;
+  width: 49%;
+}
+
+/* Main */
+.presentation {
+  margin: 0.5rem;
+  height: 25rem;
+  background-color: rgb(218,236,0);
+}
+
+/* Blue blocks */
+.blue-blocks {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.blue-block {
+  height: 20rem;
+  width: 30%;
+  background-color:rgb(74,137,208);
+}
+
+/* Grey Blocks */ 
+
+.grey-block {
+  height: 15rem;
+  width: 20%;
+  background-color:rgb(227,227,227);
+}
+
+@media screen and (max-width: 960px) {
+  .grey-block {
+    height: 5rem;
+    width: 48%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentation {
+    height: 20rem;
+  }
+
+  .nav-div {
+    width: 100%;
+  }
+
+  .blue-block {
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 0.5rem;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .presentation {
+    height: 10rem;
+  }
+  .blue-block {
+    height: 10rem;
+    width: 100%;
+  }
+  .grey-block {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  
+}
+

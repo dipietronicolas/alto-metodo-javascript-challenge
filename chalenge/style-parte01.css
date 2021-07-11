@@ -1,0 +1,280 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./assets/img/wood-wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* NavBar */
+
+.navbar {
+  margin: 0.5rem;
+  min-height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-div {
+  margin-bottom: 0.5rem;
+  /* background-color: rgb(255,163,53); */
+  height: 5rem;
+  width: 49%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Lobster', cursive;
+}
+
+.nav-div a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: larger;
+}
+
+.nav-div div {
+  background: rgba(40, 40, 40, 0.5);
+  width: 80%;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-brand {
+  height: 100%;
+  width: auto;
+}
+
+/* Main */
+
+.presentation {
+  margin: 0.5rem 5rem 0.5rem 5rem;
+  height: 25rem;
+  background-color: rgb(218, 236, 0);
+  background-image: url('./assets/img/pizza-pics/pizza02.jpg');
+  background-size: cover;
+  background-position: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@font-face {
+  font-family: "MontserratLight";
+  src: url('./assets/fonts/Montserrat-Thin.ttf');
+}
+
+.presentation h2 {
+  width: 100%;
+  background: rgba(240, 240, 240, 0.5);
+  padding-bottom: 1rem;
+  font-family: 'MontserratLight';
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+@font-face {
+  font-family: "MontserratLightItalic";
+  src: url('./assets/fonts/Montserrat-LightItalic.ttf');
+}
+
+.presentation h4 {
+  width: 100%;
+  background: rgba(240, 240, 240, 0.5);
+  font-family: MontserratLightItalic;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+/* Blue blocks */
+
+.blue-blocks {
+  padding: 1rem;
+  margin: 0.5rem 5rem 0.5rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgba(40, 40, 40, 0.5);
+}
+
+.blue-block {
+  position: relative;
+  height: 20rem;
+  width: 30%;
+  /* background-color:rgb(74,137,208); */
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-color: aliceblue;
+}
+
+#blue-block01 {
+  background-image: url('./assets/img/pizza-pics/mozzarella.jpg');
+}
+
+#blue-block02 {
+  background-image: url('./assets/img/pizza-pics/picke.jpg');
+}
+
+#blue-block03 {
+  background-image: url('./assets/img/pizza-pics/peperoni.jpg');
+}
+
+.blur {
+  backdrop-filter: blur(5px);
+  height: 40%;
+  width: 100%;
+  padding-top: 2rem;
+  border-top-left-radius: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Order now button*/
+
+.order-now-button {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.5rem 0 0.5rem 0;
+  border: 5px solid black;
+  border-radius: 50%;
+  background-color: rgb(255, 218, 56);
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+  font-size: large;
+  text-shadow: 5px 0px 5px white;
+}
+
+/* Grey Blocks */
+
+.grey-blocks {
+  margin: 0.5rem 5rem 0.5rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.grey-block {
+  height: 15rem;
+  width: 23%;
+  padding: 1rem;
+  background-color: rgba(227, 227, 227, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grey-block h4 {
+  margin-top: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1.25rem;
+  text-align: center;
+  color: rgb(26, 58, 40);
+}
+
+.grey-block p {
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: end;
+}
+
+@media screen and (max-width: 960px) {
+  .presentation h2 {
+    font-size: 2rem;
+  }
+  .presentation h4 {
+    font-size: 1rem;
+  }
+  .grey-block {
+    padding: 0;
+    height: 7rem;
+    width: 48%;
+    margin-bottom: 0.5rem;
+  }
+  .grey-block h4 {
+    font-size: 1rem;
+  }
+  .grey-block p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentation {
+    height: 20rem;
+    margin: 0.5rem 2rem 0.5rem 2rem;
+  }
+  .nav-div {
+    width: 100%;
+  }
+  .blue-block {
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 0.5rem;
+    background-position-x: 2rem;
+    align-items: flex-start;
+  }
+  .blur {
+    margin: 0;
+    backdrop-filter: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav-brand {
+    width: 100%;
+  }
+  .presentation {
+    height: 10rem;
+    margin: 0.5rem;
+  }
+  .presentation h2 {
+    font-size: 1rem;
+  }
+  .presentation h4 {
+    font-size: 0.5rem;
+  }
+  .blue-blocks {
+    padding: 1rem;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+  }
+  .blue-block {
+    height: 10rem;
+    width: 100%;
+  }
+  .blur {
+    justify-content: flex-end;
+    padding-right: 2rem;
+  }
+  .grey-blocks {
+    margin: 1rem;
+  }
+  .grey-block {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {}
